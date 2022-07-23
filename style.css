@@ -44,6 +44,11 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
   font-family: Poppins, Arial, sans-serif;
+  background-image: linear-gradient(
+    94.3deg,
+    hsla(229, 42%, 18%, 1) 10.9%,
+    hsla(235, 17%, 38%, 1) 87.1%
+  );
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -79,15 +84,29 @@ select {
 /* Blinking outline indicator */
 
 .blink {
-  border: 4px #ff0000 solid;
+  border: 4px hsl(0, 100%, 50%) solid;
 
   animation: blink 3s infinite;
 }
 
 @keyframes blink {
   50% {
-    border-color: #fff;
+    border-color: hsl(0, 0%, 100%);
   }
 }
 
 /* CSS Reset end */
+
+h1,
+.score {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px 0 50px;
+  color: white;
+}
+
+canvas {
+  background: hsl(0, 0%, 95%);
+  display: block;
+  margin: 0 auto;
+}
